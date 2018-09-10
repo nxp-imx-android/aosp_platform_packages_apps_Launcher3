@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+ifeq ($(HAVE_FSL_IMX_GPU3D),true)
 LOCAL_PATH := $(call my-dir)
 
 #
@@ -240,3 +241,4 @@ include $(BUILD_PACKAGE)
 
 # ==================================================
 include $(call all-makefiles-under,$(LOCAL_PATH))
+endif
