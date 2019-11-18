@@ -14,7 +14,9 @@
 # limitations under the License.
 #
 
-ifeq ($(HAVE_FSL_IMX_GPU3D),true)
+ifeq ($(HAVE_FSL_IMX_GPU3D),false)
+# Do nothing here
+else
 LOCAL_PATH := $(call my-dir)
 
 #
